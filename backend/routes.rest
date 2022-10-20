@@ -1,15 +1,15 @@
 # get all airlines and their reviews
-GET http://localhost:3000/api/v1/airlines
+GET http://localhost:3001/api/v1/airlines
 
 ###
 
 # get a specific airline and its reviews
-GET http://localhost:3000/api/v1/airlines/united-airlines
+GET http://localhost:3001/api/v1/airlines/united-airlines
 
 ###
 
 # create a new airline
-POST http://localhost:3000/api/v1/airlines
+POST http://localhost:3001/api/v1/airlines
 Content-Type: application/json
 
 {
@@ -20,12 +20,12 @@ Content-Type: application/json
 ###
 
 # get the newly created airline
-GET http://localhost:3000/api/v1/airlines/new-airline
+GET http://localhost:3001/api/v1/airlines/new-airline
 
 ###
 
 # update an airline name 
-PUT http://localhost:3000/api/v1/airlines/new-airline
+PUT http://localhost:3001/api/v1/airlines/new-airline
 Content-Type: application/json
 
 {
@@ -35,7 +35,7 @@ Content-Type: application/json
 ###
 
 # create a new review for the second airline, southwest
-POST http://localhost:3000/api/v1/reviews
+POST http://localhost:3001/api/v1/reviews
 Content-Type: application/json
 
 {
@@ -48,14 +48,14 @@ Content-Type: application/json
 ###
 
 # get a specific airline and its reviews
-GET http://localhost:3000/api/v1/airlines/southwest
+GET http://localhost:3001/api/v1/airlines/southwest
 
 ###
 
 # delete an airline
-DELETE http://localhost:3000/api/v1/airlines/new-airline
+DELETE http://localhost:3001/api/v1/airlines/new-airline
 
 ###
 
 # delete a review
-DELETE http://localhost:3000/api/v1/reviews/3
+DELETE http://localhost:3001/api/v1/reviews/3
