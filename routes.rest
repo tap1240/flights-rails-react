@@ -1,0 +1,61 @@
+# get all airlines and their reviews
+GET http://localhost:3000/api/v1/airlines
+
+###
+
+# get a specific airline and its reviews
+GET http://localhost:3000/api/v1/airlines/united-airlines
+
+###
+
+# create a new airline
+POST http://localhost:3000/api/v1/airlines
+Content-Type: application/json
+
+{
+  "name": "New Airline",
+  "image_url": "https://source.unsplash.com/1600x900/?airplane"
+}
+
+###
+
+# get the newly created airline
+GET http://localhost:3000/api/v1/airlines/new-airline
+
+###
+
+# update an airline name 
+PUT http://localhost:3000/api/v1/airlines/new-airline
+Content-Type: application/json
+
+{
+  "name": "New Airline Name"
+} 
+
+###
+
+# create a new review for the second airline, southwest
+POST http://localhost:3000/api/v1/reviews
+Content-Type: application/json
+
+{
+  "title": "New Review",
+  "description": "This is a new review",
+  "score": 5,
+  "airline_id": 2
+}
+
+###
+
+# get a specific airline and its reviews
+GET http://localhost:3000/api/v1/airlines/southwest
+
+###
+
+# delete an airline
+DELETE http://localhost:3000/api/v1/airlines/new-airline
+
+###
+
+# delete a review
+DELETE http://localhost:3000/api/v1/reviews/3
