@@ -4,6 +4,9 @@
   - https://github.com/zayneio/open-flights
   - https://www.youtube.com/watch?v=oyjzi837wME
 
+## Links
+- https://guides.rubyonrails.org/v2.3.8/association_basics.html
+
 ## Config and Setup
 
 - "gem install rubocop" - linter and formatter

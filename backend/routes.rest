@@ -45,10 +45,26 @@ Content-Type: application/json
   "airline_id": 2
 }
 
+# response format
+# {
+#     "review": {
+#         "data": {
+#             "id": "17",
+#             "type": "review",
+#             "attributes": {
+#                 "title": "a",
+#                 "description": "a",
+#                 "score": 0,
+#                 "airline_id": 1
+#             }
+#         }
+#     }
+# }
+
 ###
 
 # get a specific airline and its reviews
-GET http://localhost:3001/api/v1/airlines/southwest
+GET http://localhost:3001/api/v1/airlines/united-airlines
 
 ###
 
@@ -58,4 +74,4 @@ DELETE http://localhost:3001/api/v1/airlines/new-airline
 ###
 
 # delete a review
-DELETE http://localhost:3001/api/v1/reviews/3
+DELETE http://localhost:3001/api/v1/reviews/21
